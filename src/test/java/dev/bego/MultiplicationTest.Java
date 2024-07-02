@@ -28,4 +28,12 @@ public class MultiplicationTest {
 
         assertEquals(expected, table);
     }
+
+    @Test
+    void testTableSizeIsTen() {
+        int n = 5;
+        List<String> table = Multiplication.createTable(n);
+        assertEquals(10, table.size());
+    }
+
 }
